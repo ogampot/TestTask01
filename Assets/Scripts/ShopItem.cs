@@ -71,10 +71,10 @@ public class ShopItem : ShopMember
 
             itemImage.enabled = true;
             itemBuyButton.enabled = true;
-        }
 
-        if(shopManager.UserTickets < itemCost) itemBuyButton.enabled = false;
-        else itemBuyButton.enabled = true;
+            if (shopManager.UserTickets < itemCost) itemBuyButton.enabled = false;
+            else itemBuyButton.enabled = true;
+        }
     }
 
     private void TryToBuyItem()
